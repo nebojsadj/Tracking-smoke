@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <h1>Tracking Smoke</h1>
+    <div id="clock"><span id="h"></span> : <span id="m"></span> : <span id="s"></span></div>
+    <div id="vremeee"><span id="dan">0</span> d : <span id="sat">0</span> h : <span id="min">0</span> m <span id="without"> time without smoking</span></div>
+    <div id="date"><span id="d"></span>.<span id="mt"></span>.<span id="y"></span></div>
+      <div id="reset">reset</div>
+    <img src="sl/logo.gif" alt="">
+    <br><br>
+  </header>
+  <main>
+    <div id="container">
+        <div id="holder1">
+          <h2 id="hi" class="bgh2">Hi there!</h2>
+          <p class="bgp">Welcome to Tracking Smoke</p>
+          <p class="bgp">the app that tracks your smoker habits</p>
+          <div id="trackingBtn">Start Tracking</div>
+          <div id="historyBtn">See History</div>
+        </div>
+        <div id="holder2">
+          <h2 class="bgh2">Your Name</h2>
+          <input id="nameUser" type="text">
+          <div id="nextBtn">Next ▶</div>
+        </div>
+        <div id="holder3">
+          <p class="bgp">How many cigarettes do you smoke daily?</p>
+          <ul>
+            <li id="8" class="pre">Less than 10 cigarettes</li>
+            <li id="18" class="pre">Between 11 and 20 cigarettes</li>
+            <li id="28" class="pre">Between 21 and 30 cigarettes</li>
+            <li id="38" class="pre">More than 30 cigarettes</li>
+          </ul>
+          <div id="nextBtn2">Next ▶</div>
+        </div>
+        <div id="holder4">
+          <p class="bgp">How much do you spend per pack?</p>
+          <input id="pack" type="text">
+          <label for="pack">RSD</label>
+          <div id="nextBtn3">Next ▶</div>
+        </div>
+        <div id="container2">
+          <div id="cigarettes">
+            <h2 class="bgCont2">Cigarette consumption</h2>
+            <img class="imgs" src="sl/cigarette.png" alt="">
+            <div class="sum"></div>
+          </div>
+          <div id="smoke">
+            <h2 class="bgCont2">Consume a cigarette</h2>
+            <img class="imgs" src="sl/consume.jpg" alt="">
+            <div class="sum"></div>
+          </div>
+          <div id="money">
+            <h2 class="bgCont2">Spending money on cigarettes</h2>
+            <img class="imgs" src="sl/money.jpg" alt="">
+            <div class="sum"></div>
+          </div>
+        </div>
+          <div id="holdImg">
+            <img id="vincent" src="sl/pulp1.gif" alt="">
+            <img id="mia" src="sl/pulp2.gif" alt="">
+            <div id="average">
+              <h3>Average amount</h3>
+              <div id="numAverage">0</div>
+            </div>
+            <div id="smokeCig"><b>Smoked </b> <span id="sp">0</span> <b> cigarettes</b></div>
+            <div id="going">
+              <div id="counter"><b>+1</b></div>
+              <div id="text"><b>I'm going to smoke now Register a cigarette</b></div>
+            </div>
+            <div id="manually">
+              <input id="manuallyInput"type="text" placeholder="num">
+              <div id="man">
+                <b>Manually log the number of cigarettes that I've smoked</b>
+              </div>
+            </div>
+            </div>
+            <div id="cigConsumtion">
+                <div>
+                  <table class="dwmy">
+                    <tr>
+                      <th>For 1 day</th>
+                      <th id="dayC" class="potrosnja">0</th>
+                      <th>cigarettes</th>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <table class="dwmy">
+                    <tr>
+                      <th>For 1 week</th>
+                      <th id="weekC" class="potrosnja">0</th>
+                      <th>cigarettes</th>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <table class="dwmy">
+                    <tr>
+                      <th>For 1 month</th>
+                      <th id="monthC" class="potrosnja">0</th>
+                      <th>cigarettes</th>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <table class="dwmy">
+                    <tr>
+                      <th>For 1 year</th>
+                      <th id="yearC" class="potrosnja">0</th>
+                      <th>cigarettes</th>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+            <div id="moneyConsumtion">
+                <div>
+                  <table class="dwmy2">
+                    <tr>
+                      <th>For 1 day</th>
+                      <th id="dayM" class="potrosnjaNovca">0</th>
+                      <th>rsd</th>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <table class="dwmy2">
+                    <tr>
+                      <th>For 1 week</th>
+                      <th id="weekM" class="potrosnjaNovca">0</th>
+                      <th>rsd</th>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <table class="dwmy2">
+                    <tr>
+                      <th>For 1 month</th>
+                      <th id="monthM" class="potrosnjaNovca">0</th>
+                      <th>rsd</th>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  <table class="dwmy2">
+                    <tr>
+                      <th>For 1 year</th>
+                      <th id="yearM" class="potrosnjaNovca">0</th>
+                      <th>rsd</th>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+    </div>
+    <div id="historyView"></div>
+  </main>
+  <footer>
+    <div id="back">Back</div>
+  </footer>
+  <script src="selectors.js" charset="utf-8"></script>
+  <script src="view.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>
