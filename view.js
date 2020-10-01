@@ -1,5 +1,4 @@
 trackingBtn.onclick = startTracking;
-historyBtn.onclick = seeHistory;
 cigarettesCard.onclick = cigarettesView;
 smokeCard.onclick = smokerView;
 moneyCard.onclick = moneyView;
@@ -121,39 +120,7 @@ function gif2() {
     miaGif.style.display = 'none';
   },3000)
 };
-// istorija
-function seeHistory() {
-  historyView.innerHTML = '';
-  historyView.innerHTML = '<div id="x">X</div>'+'<br>';
-  historyView.style.display = 'block';
 
-    let istorija = JSON.parse(localStorage.history);
-    let istorijaDatuma = JSON.parse(localStorage.dates);
-    let istorijaCigareta = istorija.cigar;
-    for (let i = 0; i < istorijaCigareta.length; i++) {
-      historyView.innerHTML += (`${istorijaDatuma.date[i]} ukupno ${istorijaCigareta[i]} cigareta <br>`)
-    }
-    // close div
-    document.querySelector('#x').onclick = function () {
-      historyView.style.display = 'none';
-    }
-};
-
-function addHistory() {
-  if(localStorage.history != '' && localStorage.dates != '') {
-    historyObj = JSON.parse(localStorage.history);
-    historyDates = JSON.parse(localStorage.dates);
-  }
-  function addH() {
-    let unesiDatum = parseInt(time.getDate() - 1) +'.'+ parseInt(time.getMonth() + 1) +'.'+time.getFullYear();
-      historyObj.cigar.push(localStorage.counter);
-      historyDates.date.push(unesiDatum);
-      localStorage.counter = 0;
-      localStorage.history = JSON.stringify(historyObj);
-      localStorage.dates = JSON.stringify(historyDates);
-  };
-  addH();
-};
 
 // dugme za povratak u meni kartica
 backBtn.onclick = function () {
