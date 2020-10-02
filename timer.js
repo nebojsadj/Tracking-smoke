@@ -1,3 +1,5 @@
+timer();
+
 function timer() {
   let time = new Date();
   if (time.getHours() < 10) {
@@ -34,18 +36,3 @@ function timer() {
     dani.innerHTML = 0;
   };
 };
-timer();
-
-function date() {
-  let time = new Date();
-  dan.innerHTML = time.getDate();
-  mesec.innerHTML = time.getMonth() + 1;
-  godina.innerHTML = time.getFullYear() + '.';
-};
-date();
-
-setInterval(function () {
-  timer();
-  date();
-  refreshHistory();
-},1000);
