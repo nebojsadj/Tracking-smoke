@@ -1,5 +1,5 @@
 // koliko kosta kutija vasih cigareta
-function howPack() {
+function howManyPack() {
   holder4.style.display = 'block';
     nextBtn3.onclick = function () {
       if (packInput.value == '') {

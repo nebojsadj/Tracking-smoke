@@ -22,41 +22,7 @@ function startTracking() {
     userName();
   }
 };
-// unos korisnickog imena
-function userName() {
-  holder2.style.display = 'block';
-  nameInput.focus();
-  nextBtn.onclick = function () {
-    if (nameInput.value === '') {
-      nameInput.style.border = '2px solid red';
-    }else {
-      nameInput.style.border = '2px solid black';
-      holder2.style.display = 'none';
-      localStorage.userNameTracking = nameInput.value;
-      howCigarettes();
-    }
-  };
-};
-// koliko prosecno cigareta iskoristite u toku dana
-function howCigarettes() {
-  holder3.style.display = 'block';
-  for (let i = 0; i < allList1.length; i++) {
-    allList1[i].addEventListener('click',check);
-  };
-  function check() {
-    this.className = 'posle';
-    for (let i = 0; i < allList1.length; i++) {
-      allList1[i].removeEventListener('click',check);
-      allList1[i].style.background = 'white';
-    };
-    localStorage.cigarettesAverage = this.id;
 
-    nextBtn2.onclick = function () {
-      holder3.style.display = 'none';
-      howPack();
-    };
-  };
-};
 
 function cigarettesView() {
   container2.style.display = 'none';
