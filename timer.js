@@ -35,7 +35,6 @@ function timer() {
   };
 };
 timer();
-// setInterval(timer,1000);
 
 function date() {
   let time = new Date();
