@@ -33,3 +33,13 @@ function addHistory() {
   };
   addH();
 };
+
+refreshHistory();
+function refreshHistory() {
+  let noviMesec = time.getMonth() + 1;
+
+  if (time.getDate() > localStorage.startDan && localStorage.brojac == 0 || noviMesec > localStorage.startMesec && localStorage.brojac == 0) {
+      addHistory();
+      localStorage.brojac = 1;
+  }
+};
