@@ -13,7 +13,7 @@ function seeHistory() {
       historyView.innerHTML += (`${istorijaDatuma.date[i]} ukupno ${istorijaCigareta[i]} cigareta <br>`)
     }
       // close div
-      closeHstory.onclick = function () {
+      closeHistory.onclick = function () {
         historyView.style.display = 'none';
       }
 };

@@ -10,7 +10,7 @@ if (localStorage.packingCigarettes) {
   holder3.style.display = 'none';
   holder4.style.display = 'none';
   hiThere.innerHTML = `Hi ${localStorage.userNameTracking} !`;
-  smokeCard.childNodes[5].innerHTML = 'current '+'<span id="sp">'+localStorage.counter+'</span>'+ ' cigarett';
+  smokeCard.childNodes[5].innerHTML = `current <span id="sp">${localStorage.counter}</span> cigarett`;
 };
 // pocetni meni, odlazak u glavni meni i istoriju
 function startTracking() {
@@ -30,7 +30,7 @@ backBtn.onclick = function () {
   cigConsumtion.style.display = 'none';
   moneyConsumtion.style.display = 'none';
   backBtn.style.display = 'none';
-  smokeCard.childNodes[5].innerHTML = 'current '+'<span id="sp">'+localStorage.counter+'</span>'+ ' cigarett';
+  smokeCard.childNodes[5].innerHTML = `current <span id="sp">${localStorage.counter}</span> cigarett`;
 };
 
 

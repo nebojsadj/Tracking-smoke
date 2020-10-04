@@ -3,17 +3,17 @@ timer();
 function timer() {
   let time = new Date();
   if (time.getHours() < 10) {
-    sati.innerHTML = '0' + time.getHours();
+    sati.innerHTML = `0 ${time.getHours()}`;
   }else {
     sati.innerHTML = time.getHours();
   }
   if (time.getMinutes() < 10) {
-    minuti.innerHTML = '0' + time.getMinutes();
+    minuti.innerHTML = `0 ${time.getMinutes()}`;
   }else {
     minuti.innerHTML = time.getMinutes();
   }
   if (time.getSeconds() < 10) {
-    sekunde.innerHTML = '0' + time.getSeconds();
+    sekunde.innerHTML = `0 ${time.getSeconds()}`;
   }else {
     sekunde.innerHTML = time.getSeconds();
   };
