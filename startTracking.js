@@ -17,6 +17,10 @@ function startTracking() {
   holder1.style.display = 'none';
   if (localStorage.userNameTracking && localStorage.cigarettesAverage && localStorage.packingCigarettes) {
     container2.style.display = 'block';
+    smokeCard.style.display = 'block';
+    moneyCard.style.display = 'block';
+    cigarettesCard.style.display = 'block';
+    backToStartBtn.style.display='block';
     realAverage();
   }else {
     userName();
@@ -30,8 +34,18 @@ backBtn.onclick = function () {
   cigConsumtion.style.display = 'none';
   moneyConsumtion.style.display = 'none';
   backBtn.style.display = 'none';
+  backToStartBtn.style.display = 'block';
   smokeCard.childNodes[5].innerHTML = `current <span id="sp">${localStorage.counter}</span> cigarett`;
 };
+
+backToStartBtn.onclick = function () {
+  holder1.style.display = 'block';
+  holder2.style.display = 'none';
+  smokeCard.style.display = 'none';
+  moneyCard.style.display = 'none';
+  cigarettesCard.style.display = 'none';
+  backToStartBtn.style.display = 'none';
+}
 
 
 function previousCigar() {

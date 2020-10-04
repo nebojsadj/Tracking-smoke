@@ -26,6 +26,7 @@ let smokeCig = document.querySelector('#smokeCig');
 let vincentGif = document.querySelector('#vincent');
 let miaGif = document.querySelector('#mia');
 const backBtn = document.querySelector('#back');
+const backToStartBtn = document.querySelector('#backToStart');
 let manuallyInput = document.querySelector('#manuallyInput');
 let dayC = document.querySelector('#dayC');
 let dayM = document.querySelector('#dayM');

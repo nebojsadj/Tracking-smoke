@@ -417,6 +417,27 @@ h3{
   cursor: pointer;
   display: none;
 }
+
+#backToStart:hover{
+  background: #66ff66;
+}
+
+#backToStart{
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 20px;
+  font-size: 32px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 790px;
+  background: white;
+  cursor: pointer;
+  display: none;
+}
+
 #reset{
     width: 80px;
     height: 25px;

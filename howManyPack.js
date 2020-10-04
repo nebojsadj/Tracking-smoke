@@ -8,6 +8,7 @@ function howManyPack() {
         packInput.style.border = '2px solid black';
         holder4.style.display = 'none';
         container2.style.display = 'block';
+        backToStartBtn.style.display='block';
         localStorage.packingCigarettes = packInput.value;
         localStorage.counter = 0;
         smokeCard.childNodes[5].innerHTML = `current <span id="sp">${localStorage.counter}</span> cigarett`;

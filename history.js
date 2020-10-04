@@ -3,14 +3,14 @@ historyBtn.onclick = seeHistory;
 
 function seeHistory() {
   historyView.innerHTML = '';
-  historyView.innerHTML = '<div id="x">X</div>'+'<br>';
+  historyView.innerHTML = `<div id="x">X</div><br/>`;
   historyView.style.display = 'block';
     let closeHistory = document.querySelector('#x');
     let istorija = localStorage.history ? JSON.parse(localStorage.history) : {cigar:[]};
     let istorijaDatuma = localStorage.dates ? JSON.parse(localStorage.dates) : {date:[]};
     let istorijaCigareta = istorija.cigar;
     for (let i = 0; i < istorijaCigareta.length; i++) {
-      historyView.innerHTML += (`${istorijaDatuma.date[i]} ukupno ${istorijaCigareta[i]} cigareta <br>`)
+      historyView.innerHTML += (`${istorijaDatuma.date[i]} ukupno ${istorijaCigareta[i]} cigareta <br/>`)
     }
       // close div
       closeHistory.onclick = function () {
