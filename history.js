@@ -5,17 +5,17 @@ function seeHistory() {
   historyView.innerHTML = '';
   historyView.innerHTML = '<div id="x">X</div>'+'<br>';
   historyView.style.display = 'block';
-
+    let closeHistory = document.querySelector('#x');
     let istorija = JSON.parse(localStorage.history);
     let istorijaDatuma = JSON.parse(localStorage.dates);
     let istorijaCigareta = istorija.cigar;
     for (let i = 0; i < istorijaCigareta.length; i++) {
       historyView.innerHTML += (`${istorijaDatuma.date[i]} ukupno ${istorijaCigareta[i]} cigareta <br>`)
     }
-    // close div
-    document.querySelector('#x').onclick = function () {
-      historyView.style.display = 'none';
-    }
+      // close div
+      closeHstory.onclick = function () {
+        historyView.style.display = 'none';
+      }
 };
 
 function addHistory() {
@@ -24,7 +24,7 @@ function addHistory() {
     historyDates = JSON.parse(localStorage.dates);
   }
   function addH() {
-    let unesiDatum = parseInt(time.getDate() - 1) +'.'+ parseInt(time.getMonth() + 1) +'.'+time.getFullYear();
+    let unesiDatum =` ${parseInt(time.getDate() - 1)}.${parseInt(time.getMonth() + 1)}.${time.getFullYear()}`;
       historyObj.cigar.push(localStorage.counter);
       historyDates.date.push(unesiDatum);
       localStorage.counter = 0;
