@@ -6,8 +6,8 @@ function seeHistory() {
   historyView.innerHTML = '<div id="x">X</div>'+'<br>';
   historyView.style.display = 'block';
     let closeHistory = document.querySelector('#x');
-    let istorija = JSON.parse(localStorage.history);
-    let istorijaDatuma = JSON.parse(localStorage.dates);
+    let istorija = localStorage.history ? JSON.parse(localStorage.history) : {cigar:[]};
+    let istorijaDatuma = localStorage.dates ? JSON.parse(localStorage.dates) : {date:[]};
     let istorijaCigareta = istorija.cigar;
     for (let i = 0; i < istorijaCigareta.length; i++) {
       historyView.innerHTML += (`${istorijaDatuma.date[i]} ukupno ${istorijaCigareta[i]} cigareta <br>`)
