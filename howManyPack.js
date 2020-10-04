@@ -10,7 +10,7 @@ function howManyPack() {
         container2.style.display = 'block';
         localStorage.packingCigarettes = packInput.value;
         localStorage.counter = 0;
-        smokeCard.childNodes[5].innerHTML = 'current '+'<span id="sp">'+localStorage.counter+'</span>'+ ' cigarett';
+        smokeCard.childNodes[5].innerHTML = `current <span id="sp">${localStorage.counter}</span> cigarett`;
         localStorage.history = JSON.stringify(historyObj);
         localStorage.dates = JSON.stringify(historyDates);
         realAverage();
